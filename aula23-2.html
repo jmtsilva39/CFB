@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+
+    #caixa{
+        background-color: black;
+       
+    }
+
+    
+
+</style>
+
+</head>
+
+
+
+<body>
+    
+    <h1>getElementById</h1>
+
+
+    <div id="caixa" onmouseover="cor()" onmouseout="saiu()">
+        teste
+    </div>
+
+
+    <script>
+
+        var caixa = document.getElementById('caixa')
+        caixa.style = "width:500px; height: 300px ;background: blue"
+        caixa.style.color = "white"
+        caixa.style.background = "green"
+
+        function cor(){
+            caixa.style.background = "red"
+        }
+        function saiu(){
+            caixa.style.background = "green"
+        }
+
+    </script>
+
+</body>
+</html>
