@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipular Data e Hora em JavaScript</title>
+</head>
+<body>
+    
+
+    <script>
+        var dt=new Date();
+
+        var ndt=new Date()
+        ndt.setDate(dt.getDate()+1);
+        ndt.setFullYear(dt.getFullYear()-10)
+
+
+        var diasem=ndt.getDay();
+        var dia=ndt.getDate();        
+        var mes=ndt.getMonth();
+        var ano=ndt.getFullYear();
+
+        var horas=ndt.getHours();
+        var minutos=ndt.getMinutes();
+        var segundos=ndt.getSeconds();
+
+        var meses=new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio" , "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+        var semana= new Array("Segunda", "Terça", "Quarta", "Quinta", "Sexta")
+        
+        document.write(semana[diasem] + ", " + dia + " de " + meses[mes] + " de "+ ano);
+        document.write("<br>" + horas + ":" + minutos +":" + segundos)
+
+
+    </script>
+</body>
+</html>
